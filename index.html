@@ -123,6 +123,72 @@ footer .brand em { color: #2ecc9a; font-style: normal; }
 .wa-btn { width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 .wa-btn svg { width: 28px; height: 28px; fill: #fff; }
 </style>
+
+<style>
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.2rem; flex-wrap: wrap; gap: 0.5rem; }
+  .nav-links { display: none; }
+  .nav-right { gap: 0.5rem; }
+  .lang-btn { padding: 5px 10px; font-size: 10px; }
+  .nav-cta { padding: 0.5rem 1rem; font-size: 11px; }
+
+  .hero { padding: 6rem 1.2rem 3rem; min-height: auto; }
+  .hero h1 { font-size: 42px; letter-spacing: -1px; }
+  .hero p { font-size: 14px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .hero-line { display: none; }
+  .hero-scroll { display: none; }
+
+  .stats-bar { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 1px solid #1a1a1a; padding: 1.5rem 1.2rem; }
+  .stat:last-child { border-bottom: none; }
+  .stat-num { font-size: 36px; }
+
+  .services-wrap { padding: 3rem 1.2rem; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .section-desc { text-align: left; max-width: 100%; }
+  .section-title { font-size: 28px; }
+
+  .machine-feature { grid-template-columns: 1fr; }
+  .machine-visual { min-height: 220px; padding: 1.5rem; }
+  .machine-info { padding: 1.5rem; }
+  .machine-info h3 { font-size: 18px; }
+  .specs-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .service-cards { grid-template-columns: 1fr 1fr; }
+
+  .about-wrap { grid-template-columns: 1fr; }
+  .about-left { padding: 3rem 1.2rem; border-right: none; border-bottom: 1px solid #1a1a1a; }
+  .about-right { padding: 3rem 1.2rem; }
+  .fact-list { grid-template-columns: 1fr 1fr; }
+
+  section[style*="padding: 6rem 3rem"] { padding: 3rem 1.2rem !important; }
+
+  .contact-wrap { grid-template-columns: 1fr; }
+  .contact-left { padding: 3rem 1.2rem; }
+  .contact-right { padding: 3rem 1.2rem; }
+  .contact-left h2 { font-size: 28px; }
+
+  .map-wrap { height: 250px; }
+
+  footer { padding: 1.2rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+
+  .wa-float { bottom: 1.2rem; right: 1.2rem; }
+  .wa-btn { width: 50px; height: 50px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 34px; }
+  .service-cards { grid-template-columns: 1fr; }
+  .specs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Taşmayı önle */
+* { max-width: 100%; }
+body { overflow-x: hidden; }
+img { max-width: 100%; }
+</style>
 </head>
 <body>
 
